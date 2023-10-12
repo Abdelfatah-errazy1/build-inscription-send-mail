@@ -39,7 +39,7 @@
                         <input type="text" id="firstName" name="prenom" class="form-control form-control-lg" />
                         <label class="form-label" for="firstName">prenom</label>
                       </div>
-    
+                       <x-error field="prenom" />
                     </div>
                     <div class="col-md-6 mb-4">
     
@@ -47,7 +47,7 @@
                         <input type="text" id="lastName" name="nom" class="form-control form-control-lg" />
                         <label class="form-label" for="lastName">Nom</label>
                       </div>
-    
+                      <x-error field="nom" />
                     </div>
                   </div>
     
@@ -55,10 +55,11 @@
                     <div class="col-md-6 mb-4 d-flex align-items-center">
     
                       <div class="form-outline datepicker w-100">
-                        <input type="date" name="dateNaissance" class="form-control form-control-lg" id="birthdayDate" />
+                        <input type="date" required name="dateNaissance" class="form-control form-control-lg" id="birthdayDate" />
                         <label for="birthdayDate" class="form-label">Date Naissance</label>
                       </div>
-    
+                      <x-error field="dateNaissance" />
+                       
                     </div>
                     <div class="col-md-6 mb-4">
     
@@ -75,6 +76,7 @@
                           value="option2" />
                         <label class="form-check-label" for="maleGender">Homme</label>
                       </div>
+                      <x-error field="genre" />
     
     
                     </div>
@@ -87,7 +89,7 @@
                         <input type="email" name="email" id="emailAddress" class="form-control form-control-lg" />
                         <label class="form-label" for="emailAddress">Email</label>
                       </div>
-    
+                      <x-error field="email" />
                     </div>
                     <div class="col-md-6 mb-4 pb-2">
     
@@ -95,7 +97,7 @@
                         <input type="tel" name="phone" id="phoneNumber" class="form-control form-control-lg" />
                         <label class="form-label" for="phoneNumber">Phone Number</label>
                       </div>
-    
+                      <x-error field="phone" />
                     </div>
                   </div>
     
@@ -116,6 +118,7 @@
                            <option value="Recherche fondamentale">Recherche fondamentale</option>
                            <option value="Autres">Autres</option>
                       </select>
+                      <x-error field="specialite" />
                   </div>
                     <div class="col-md-6 mb-4">
 
@@ -125,6 +128,7 @@
                         <option value="3">Usa </option>
                         <option value="4">Itali</option>
                       </select>
+                      <x-error field="pays" />
   
                     </div>  
                     <div class="col-md-6 mb-4">
@@ -135,7 +139,7 @@
                         <option value="3">Usa </option>
                         <option value="4">Itali</option>
                       </select>
-  
+                      <x-error field="ville" />
                     </div>  
                   </div>
     
