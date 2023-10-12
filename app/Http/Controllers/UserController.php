@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\EmailNotification;
 use App\Models\User;
 use App\Notifications\UserRegisteredNotification;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 
 class UserController extends Controller
@@ -19,18 +21,24 @@ class UserController extends Controller
         return view('users.inscription');
     }
     public function store(Request $request){
-           dd($request->all());
-           $validate=$request->validate([
+        $validate=$request->validate([
             'nom'=>'required|string',
             'prenom'=>'required',
-            'spe'=>'required',
-            'telephone'=>'required',
+            'specialite'=>'required',
+            'phone'=>'required',
             'email'=>['required'],
-            'qr_code'=> 'required|exists:code_qrs,id',
-    
-           ]);
-           $user=User::create($validate);
-           Notification::send($user, new UserRegisteredNotification($user));
+            'pays'=>['required'],
+            'ville'=>['required'],
+            'dateNaissance'=>['required','date'],
+            'genre'=>['required'], 
+            
+        ]);
+        // $user=User::create($validate);
+        Mail::to('amoonaabdou@gmail.com')->send(new EmailNotification());
+
+        // Notification::route('mail', [$user->email, $user->nom])->notify(new UserRegisteredNotification($user));
+        // Notification::send($user, new UserRegisteredNotification($user));
+        dd($request->all());
 
            return redirect(route('users.index'))->with('success',"l'utilisateur a été créé ");
         }

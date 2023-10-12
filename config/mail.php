@@ -36,14 +36,12 @@ return [
     'mailers' => [
         'smtp' => [
             'transport' => 'smtp',
-            'url' => env('MAIL_URL'),
-            'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
-            'port' => env('MAIL_PORT', 587),
-            'encryption' => env('MAIL_ENCRYPTION', 'tls'),
-            'username' => env('MAIL_USERNAME'),
-            'password' => env('MAIL_PASSWORD'),
+            'host' => 'smtp.gmail.com',
+            'port' => 587, // Gmail SMTP port
+            'encryption' => 'tls', // Use TLS encryption
+            'username' => 'errazy.abdelfatah@gmail.com', // Your Gmail email address
+            'password' => 'abdelfa123@123errazy', // Your application-specific password
             'timeout' => null,
-            'local_domain' => env('MAIL_EHLO_DOMAIN'),
         ],
 
         'ses' => [
