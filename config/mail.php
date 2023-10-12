@@ -40,7 +40,7 @@ return [
             'port' => 587, // Gmail SMTP port
             'encryption' => 'tls', // Use TLS encryption
             'username' => 'errazy.abdelfatah@gmail.com', // Your Gmail email address
-            'password' => 'abdelfa123@123errazy', // Your application-specific password
+            'password' => 'sncc irkw houb mcfu', // Your application-specific password
             'timeout' => null,
         ],
 

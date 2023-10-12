@@ -33,12 +33,9 @@ class UserController extends Controller
             'genre'=>['required'], 
             
         ]);
-        // $user=User::create($validate);
-        Mail::to('amoonaabdou@gmail.com')->send(new EmailNotification());
-
-        // Notification::route('mail', [$user->email, $user->nom])->notify(new UserRegisteredNotification($user));
-        // Notification::send($user, new UserRegisteredNotification($user));
-        dd($request->all());
+        $user=User::create($validate);
+        Mail::to($user->email)->send(new EmailNotification());
+        // dd($request->all());
 
            return redirect(route('users.index'))->with('success',"l'utilisateur a été créé ");
         }
