@@ -19,6 +19,13 @@
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.2/mdb.min.css"
   rel="stylesheet"
 />
+<style>
+  body{
+    background-image: url('assets/imgs/bg.jpg')
+  }
+  
+
+</style>
 </head>
 <body>
   <div class="contai">
@@ -28,7 +35,7 @@
           <div class="col-12 col-lg-9 col-xl-7">
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body p-4 p-md-5">
-                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5">Registration Form</h3>
+                <h3 class="mb-4 pb-2 pb-md-0 mb-md-5" style="color: #2461ae">Inscription</h3>
                 <form action="{{ route('users.store') }}" method="POST">
                   @csrf
     
@@ -56,7 +63,7 @@
     
                       <div class="form-outline datepicker w-100">
                         <input type="date" required name="dateNaissance" class="form-control form-control-lg" id="birthdayDate" />
-                        <label for="birthdayDate" class="form-label">Date Naissance</label>
+                        <label for="birthdayDate" class="form-label" >Date Naissance</label>
                       </div>
                       <x-error field="dateNaissance" />
                        
@@ -95,7 +102,7 @@
     
                       <div class="form-outline">
                         <input type="tel" name="phone" id="phoneNumber" class="form-control form-control-lg" />
-                        <label class="form-label" for="phoneNumber">Phone Number</label>
+                        <label class="form-label" for="phoneNumber">Telephone</label>
                       </div>
                       <x-error field="phone" />
                     </div>
@@ -123,10 +130,7 @@
                     <div class="col-md-6 mb-4">
 
                       <select name="pays"  id="pays" class="select form-select">
-                        <option value="1" >Morocco</option>
-                        <option value="2">France</option>
-                        <option value="3">Usa </option>
-                        <option value="4">Itali</option>
+                       
                       </select>
                       <x-error field="pays" />
   
@@ -134,17 +138,14 @@
                     <div class="col-md-6 mb-4">
 
                       <select name="ville" id="ville" class="select form-select">
-                        <option value="1" >Morocco</option>
-                        <option value="2">France</option>
-                        <option value="3">Usa </option>
-                        <option value="4">Itali</option>
+                        
                       </select>
                       <x-error field="ville" />
                     </div>  
                   </div>
     
                   <div class="mt-4 pt-2">
-                    <input class="btn btn-primary btn-lg" type="submit" value="Submit" />
+                    <input class="btn btn-primary btn-lg" type="submit" value="Inscrit" style="background-color: #2461ae" />
                   </div>
     
                 </form>

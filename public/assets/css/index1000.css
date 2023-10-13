@@ -24,157 +24,16 @@ body .background{
 }
 
 
-.pro{
-position: absolute;
-top: 33%;
-left: 50%;
-width: 400px;
-height:99px;
-background-image: url('../img/Prg.png');
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-}
-
-
-.poster{
-  
-  position: absolute;
-
-  top: 36%;
-  left: 61%;
-  width: 421px;
-  height: 132px;
-background-image: url(../img/E.png);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-}
-
-
-
-.live{
-  position: absolute;
-  top: 21%;
-  left: 57%;
-  width: 565px;
-  height: 138px;
-  background-image: url(../img/re.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-
-.acc{
-  position: absolute;
-  top: 36%;
-  left: 61%;
-  width: 421px;
-  height: 132px;
-  background-image: url(../img/acc.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  }
-
-
-.poster1{
-  position: absolute;
-  top: 33%;
-  left: 61%;
-  width: 425px;
-  height: 186px;
-background-image: url(../img/1.png);
-background-position: center;
-background-size: contain;
-background-repeat: no-repeat;
-  }
-  
-  
-  .poster2{
-    position: absolute;
-    top: 73%;
-    left: 60%;
-    width: 400px;
-    height: 99px;
-    background-image: url(../img/1.png);
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-
-
 
 
 @media (max-width: 720px) {
 
   body .background{
-    content:url("../img/app/PC1.jpg");
-}
-.pro{
-  top: 60%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-}
-
-.poster{
-  top: 56%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-}
-.live{
-  top: 46%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-}
-
-.acc{
-  top: 60%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-}
-
-.poster1{
-  top: 73%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-  }
-  
-  
-  .poster2{
-    
-    top: 86%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-  }
-
+    content:url("assets/imgs/tele1.jpg");
 }
 
 
-
-.content{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
- 
 }
-
-
 
 @media screen and (max-width: 720px){
 .content{
@@ -182,61 +41,13 @@ background-repeat: no-repeat;
       width: 100%;
 }
 body .background{
-  content:url("../img/app/tele.jpg");
+  content:url("assets/imgs/tele1.jpg");
 }
-.pro{
-top: 60%;
-left: 58%;
-transform: translate(-57%);
-width: 300px;
-height: 75px;
-}
-
-.poster{
-  top: 56%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-}
-.live{
-  top: 15%;
-  left: 49%;
-transform: translate(-57%);
-width: 300px;
-height: 75px;
-}
-
-
-.acc{
-  top: 60%;
-  left: 58%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-  }
-  
-  .poster1{
-    top: 23%;
-    left: 51%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-  }
-  .poster2{
-    top: 23%;
-    left: 51%;
-  transform: translate(-57%);
-  width: 300px;
-  height: 75px;
-  }
 
 
 }
 
 
-
-/* =========================================== */
     
 .glightbox-clean .gnext,.glightbox-clean .gprev{
 
@@ -268,22 +79,7 @@ width: 300px;
     width: 25vw;
 }
 
-.listliks {
-    top: 15vw;
-    left: 70vw;
-}
-.listliks li a img {
-    width: 25vw;
-}
 
-.listliks {
-    top: 10vw;
-    left: 50vw;
-}
-.listliks li a img {
-    width: 25vw;
-}
-/* web */ 
     
     
     
@@ -330,36 +126,14 @@ left: 0vw;
 width: 70vw;
 }
 
-            .listliks {
-                top: 50vw;
-                left: 3vw;
-            }
-            .listliks li a img {
-                width: 25vw;
-            }
+.listliks {
+    top: 50vw;
+    left: 3vw;
+}
+.listliks li a img {
+    width: 25vw;
+}
 
-                
-            .listliks {
-                top: 50vw;
-                left: 3vw;
-            }
-            .listliks li a img {
-                width: 25vw;
-            }
-
-                
-            .listliks {
-                top: vw;
-                left: vw;
-            }
-            .listliks li a img {
-                width: vw;
-            }
-
-                /* mobile */ 
-                
-                
-                
 .listliks li a {
 
 width: 70vw;

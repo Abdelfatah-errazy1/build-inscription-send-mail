@@ -37,10 +37,10 @@ return [
         'smtp' => [
             'transport' => 'smtp',
             'host' => 'smtp.gmail.com',
-            'port' => 587, // Gmail SMTP port
-            'encryption' => 'tls', // Use TLS encryption
-            'username' => 'errazy.abdelfatah@gmail.com', // Your Gmail email address
-            'password' => 'sncc irkw houb mcfu', // Your application-specific password
+            'port' => 587, 
+            'encryption' => 'tls', 
+            'username' => 'associationmednuc@gmail.com', 
+            'password' => 'sncc irkw houb mcfu',
             'timeout' => null,
         ],
 
@@ -50,16 +50,12 @@ return [
 
         'mailgun' => [
             'transport' => 'mailgun',
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
+            
         ],
 
         'postmark' => [
             'transport' => 'postmark',
-            // 'client' => [
-            //     'timeout' => 5,
-            // ],
+            
         ],
 
         'sendmail' => [
@@ -85,32 +81,14 @@ return [
         ],
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Global "From" Address
-    |--------------------------------------------------------------------------
-    |
-    | You may wish for all e-mails sent by your application to be sent from
-    | the same address. Here, you may specify a name and address that is
-    | used globally for all e-mails that are sent by your application.
-    |
-    */
+
 
     'from' => [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Markdown Mail Settings
-    |--------------------------------------------------------------------------
-    |
-    | If you are using Markdown based email rendering, you may configure your
-    | theme and component paths here, allowing you to customize the design
-    | of the emails. Or, you may simply stick with the Laravel defaults!
-    |
-    */
+
 
     'markdown' => [
         'theme' => 'default',
