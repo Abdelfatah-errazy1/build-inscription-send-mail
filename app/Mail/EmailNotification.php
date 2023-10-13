@@ -18,14 +18,14 @@ class EmailNotification extends Mailable
     public $content;
     public function __construct()
     {
-        $this->content='content abdelfath';
+        $this->content='Bonjour, votre pré-inscription a été effectuée pour participer au 5ème Congrès Maghrébin et 3ème Congrès Marocain de Médecine Nucléaire';
         
     }
 
    public function build()
     {
-        return $this->from('errazy.abdelfatah@gmail.com', 'abdou')
-        ->subject('Custom Email Subject')
+        return $this->from('associationmednuc@gmail.com', 'association mednuc')
+        ->subject('Confirmation de Pré-Inscription au 5ème Congrès Maghrébin et 3ème Congrès Marocain de Médecine Nucléaire')
         ->view('mails.custom')
         ->with(['content' => $this->content]);
     }

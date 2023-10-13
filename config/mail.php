@@ -40,7 +40,7 @@ return [
             'port' => 587, 
             'encryption' => 'tls', 
             'username' => 'associationmednuc@gmail.com', 
-            'password' => 'sncc irkw houb mcfu',
+            'password' => 'evzi wvmc yxtz lbvw',
             'timeout' => null,
         ],
 
