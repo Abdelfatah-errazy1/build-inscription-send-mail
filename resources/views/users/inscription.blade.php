@@ -73,7 +73,7 @@
                       <h6 class="mb-2 pb-1">Genre: </h6>
     
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="genre" value="M" id="femaleGender"
+                        <input class="form-check-input" type="radio" name="genre" value="F" id="femaleGender"
                           value="option1" checked />
                         <label class="form-check-label" for="femaleGender">Femme</label>
                       </div>

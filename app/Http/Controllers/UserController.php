@@ -17,7 +17,8 @@ class UserController extends Controller
         return view('users.index');
     }
     public function users() {
-        $users=User::all();
+        $users=User::query()->orderBy('created_at','desc')->get();
+        // dd($users);
         return view('users.users',compact('users'));
     }
     public function inscription() {

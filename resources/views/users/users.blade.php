@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Liste Inscription</title>
   <link
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
   rel="stylesheet"
@@ -52,6 +52,7 @@
                       <th scope="col">Spécialité</th>
                       <th scope="col">Pays</th>
                       <th scope="col">Ville</th>
+                      <th scope="col">Date Inscription</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -65,9 +66,10 @@
                       <td scope="col">{{ $user->genre }}</td>
                       <td scope="col">{{ $user->email }}</td>
                       <td scope="col">{{ $user->phone }}</td>
-                      <td scope="col">{{ $user->Specialite }}</td>
+                      <td scope="col">{{ $user->specialite }}</td>
                       <td scope="col">{{ $user->pays }}</td>
                       <td scope="col">{{ $user->ville }}</td>
+                      <td scope="col">{{ $user->created_at }}</td>
                     </tr>
                     @endforeach  
                     
@@ -87,7 +89,13 @@
 ></script>
 <script src="//cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script>
-  let table = new DataTable('#myTable');
+  $(document).ready(function () {
+    let table = $('#myTable').DataTable({
+      // Define the default sorting order
+      order: [[10, 'desc']], // Assuming "created_at" is the third column (0-based index)
+    });
+  });
 </script>
+
 </body>
 </html>
