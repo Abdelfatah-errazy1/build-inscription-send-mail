@@ -14,8 +14,8 @@ Route::name('users.')
     Route::get('/inscription','inscription')->name('inscription');
     Route::post('sotre','store')->name('store');
     
+    Route::get('liste/','users')->name('users');
     Route::get('delete/{id}','delete')->name('delete');
-    Route::get('edit/{id}','edit')->name('edit');
     Route::post('update/{id}','update')->name('update');
     
 });

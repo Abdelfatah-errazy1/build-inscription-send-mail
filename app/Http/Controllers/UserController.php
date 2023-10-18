@@ -16,6 +16,10 @@ class UserController extends Controller
         
         return view('users.index');
     }
+    public function users() {
+        $users=User::all();
+        return view('users.users',compact('users'));
+    }
     public function inscription() {
         
         return view('users.inscription');
