@@ -34,7 +34,9 @@
       }
   
 
- 
+      .listliks li a img {
+        width: 10vw;
+      }
     @media (max-width: 1024px){
       .content{
       flex-direction: column;
@@ -55,10 +57,13 @@
 
         top: 58vh;
         left: 10vw;
-        width: 400px;
+        width: 300px;
       }
       .listliks li a img {
-        width: 55vw;
+        width: 15vw;
+      }
+      .listliks li a{
+        width: 15vw;
       }
 
 }
@@ -77,10 +82,10 @@
         justify-content: space-between;
         top: 61vh;
         left: -4vw;
-        width: 400px;
+        width: 300px;
       }
       .listliks li a img {
-        width: 55vw;
+        width: 15vw;
       }
 
     }
@@ -93,7 +98,9 @@
 <img  width="100%" height="100%" class="backgroud" alt="">
 <ul  class="listliks">
 
-  <li><a href="{{ route('users.inscription') }}"  ><img src="{{ asset('assets/imgs/inscrit.png') }}" alt="" srcset=""></a></li>  
+  <li><a href="ammn/application/e-poster/index.html"  ><img src="{{ asset('ammn/application/assets/img/app/eposter.png') }}" alt="" srcset=""></a></li>  
+  <li><a href="ammn/application/p.pdf"  ><img src="{{ asset('ammn/application/assets/img/app/prog.png') }}" alt="" srcset=""></a></li>  
+  <li><a href="{{ route('users.inscription') }}"  ><img  src="{{ asset('assets/imgs/inscrit.png') }}" alt="" srcset=""></a></li>  
 </ul>
 @if (session('success'))
  <script>
