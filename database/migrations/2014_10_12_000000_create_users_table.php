@@ -17,11 +17,11 @@ return new class extends Migration
             $table->string('prenom');
             $table->date('dateNaissance');
             $table->string('genre');
-            $table->string('email')->unique();
-            $table->string('phone')->unique();
+            $table->string('email');
+            $table->string('phone');
             $table->string('specialite');
-            $table->string('pays')->unique();
-            $table->string('ville')->unique();
+            $table->string('pays');
+            $table->string('ville');
             $table->timestamps();
         });
     }

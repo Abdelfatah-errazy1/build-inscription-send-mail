@@ -44,7 +44,7 @@
     
                       <div class="form-outline">
                         <input type="text" id="firstName" name="prenom" class="form-control form-control-lg" />
-                        <label class="form-label" for="firstName">prenom</label>
+                        <label class="form-label" for="firstName">Prénom</label>
                       </div>
                        <x-error field="prenom" />
                     </div>
@@ -102,7 +102,7 @@
     
                       <div class="form-outline">
                         <input type="tel" name="phone" id="phoneNumber" class="form-control form-control-lg" />
-                        <label class="form-label" for="phoneNumber">Telephone</label>
+                        <label class="form-label" for="phoneNumber">Téléphone</label>
                       </div>
                       <x-error field="phone" />
                     </div>
@@ -114,15 +114,7 @@
                           <option value="" disabled="disabled" selected="true">Spécialité</option>
                            <option value="CHU">Allergologie</option>
                            <option value="Pédiatrie">Pédiatrie</option>
-                           <option value="Pneumologie">Pneumologie</option>
-                           <option value="Dermatologie">Dermatologie</option>
-                           <option value="ORL">ORL</option>
-                           <option value="Ophtalmologie">Ophtalmologie</option>
-                           <option value="Médecine interne">Médecine interne</option>
-                           <option value="Médecine Générale">Médecine Générale</option>
-                           <option value="Immunologie">Immunologie</option>
-                           <option value="Biologie">Biologie</option>
-                           <option value="Recherche fondamentale">Recherche fondamentale</option>
+                           
                            <option value="Autres">Autres</option>
                       </select>
                       <x-error field="specialite" />

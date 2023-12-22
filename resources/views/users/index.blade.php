@@ -28,14 +28,14 @@
 
       justify-content: space-between;
 
-      top: 60vh;
-      left: 10vw;
+      top: 75vh;
+      left: 6vw;
       width: 300px;
       }
   
 
       .listliks li a img {
-        width: 10vw;
+        width: 20vw;
       }
     @media (max-width: 1024px){
       .content{
@@ -43,7 +43,7 @@
           width: 100%;
       }
       body .backgroud{
-      content:url("assets/imgs/tele1.jpg");
+      content:url("assets/imgs/tele0 .jpg");
       }
       .listliks {
 
@@ -55,15 +55,15 @@
 
         justify-content: space-between;
 
-        top: 58vh;
-        left: 10vw;
+        top: 28vh;
+    left: 20vw;
         width: 300px;
       }
       .listliks li a img {
-        width: 15vw;
+        width: 25vw;
       }
       .listliks li a{
-        width: 15vw;
+        width: 10vw;
       }
 
 }
@@ -73,19 +73,19 @@
           width: 100%;
       }
       body .backgroud{
-      content:url("assets/imgs/tele1.jpg");
+      content:url("assets/imgs/tele0 .jpg");
       }
       .listliks {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        top: 61vh;
-        left: -4vw;
+        top: 30vh;
+    left: 20vw;
         width: 300px;
       }
       .listliks li a img {
-        width: 15vw;
+        width: 30vw;
       }
 
     }
@@ -98,9 +98,9 @@
 <img  width="100%" height="100%" class="backgroud" alt="">
 <ul  class="listliks">
 
-  <li><a href="ammn/application/e-poster/index.html"  ><img src="{{ asset('ammn/application/assets/img/app/eposter.png') }}" alt="" srcset=""></a></li>  
-  <li><a href="ammn/application/p.pdf"  ><img src="{{ asset('ammn/application/assets/img/app/prog.png') }}" alt="" srcset=""></a></li>  
-  <li><a href="{{ route('users.inscription') }}"  ><img  src="{{ asset('assets/imgs/inscrit.png') }}" alt="" srcset=""></a></li>  
+  {{-- <li><a href="ammn/application/e-poster/index.html"  ><img src="{{ asset('ammn/application/assets/img/app/eposter.png') }}" alt="" srcset=""></a></li>  
+  <li><a href="ammn/application/p.pdf"  ><img src="{{ asset('ammn/application/assets/img/app/prog.png') }}" alt="" srcset=""></a></li>   --}}
+  <li><a href="{{ route('users.inscription') }}"  ><img  src="{{ asset('assets/imgs/inscritption.png') }}" alt="" srcset=""></a></li>  
 </ul>
 @if (session('success'))
  <script>
